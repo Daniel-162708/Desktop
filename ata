@@ -1,0 +1,18 @@
+from tkinter import *
+from tkinter import ttk
+
+#uma var
+janela= Tk() # cria a var janela porém sem estar em um loop
+ # cria o loop para a janela
+#janela
+#var  #                 #tamanho
+frm = ttk.Frame(janela, padding=400)
+#posição
+frm.grid()
+
+#Onde ele vai ficar
+ttk.Label(frm, text="Hello World!", font=("Arial",100)).grid(column=0, row=0)
+#Botão         #texto       #comando kanela fecha   #localidade do botão
+ttk.Button(frm, text="Quit", command=janela.destroy).grid(column=1, row=0)
+
+janela.mainloop()
