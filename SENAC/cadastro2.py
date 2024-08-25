@@ -46,7 +46,7 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
     def ns(self):
         nome = self.nome2.get()
         senha =self.parole2.get()
-
+        #assd
         if nome == senha:
             ctk.CTkLabel(self,text="la password e il nome non possono essere gli stessi", fg_color="red").place(x=10, y=10)
             #perche non rosso?
