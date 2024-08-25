@@ -1,10 +1,10 @@
 import customtkinter as ctk
-import tkinter as tk
-
 #perguntas, por que classe?
-
 ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("blue")
+
+
+
 class App(ctk.CTk): #criando a classe App que recebe o ctk
     def __init__(self):
         super().__init__()
@@ -23,7 +23,7 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
         self.entry=ctk.CTkEntry(self,width=250)
         self.entry.place(x=12,y=100)
         
-        self.h2=ctk.CTkLabel(self, text="Escrivi la parole d'ordine" )
+        self.h2=ctk.CTkLabel(self, text="Escrivi la parole d'ordine", show="*" )
         self.h2.place(x=12,y=174)
 
         self.entry=ctk.CTkEntry(self,width=250)
@@ -33,10 +33,6 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
 
         self.butto=ctk.CTkButton(self,text="Fatto")
         self.butto.place(x=70,y=299)
-
-        def
- 
-
 
 app = App() # app esta recebendo a classe App "comando entre aspas diferente"
 #geometry define o tamanho da tela
