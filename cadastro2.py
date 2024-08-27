@@ -34,7 +34,8 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
         self.butto=ctk.CTkButton(self,text="Fatto")
         self.butto.place(x=70,y=299)
 
-        def
+    def colr_tm():
+        self.colorn= ctk.CTkLabel(self,text="Colores", bgcolor="transparent", text_color=["#000","#fff"])
  
 
 
