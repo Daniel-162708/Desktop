@@ -34,7 +34,7 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
 
         #--------
         #Solo un pulsante :)
-
+#aka
         self.butto=ctk.CTkButton(self,text="Fatto", command=self.tuti)
         self.butto.place(x=120,y=200)
 #------------------------------------------ proprio una bella immagine
