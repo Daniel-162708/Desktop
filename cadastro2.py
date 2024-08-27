@@ -54,6 +54,7 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
 
 
 
+
 #sofia, como eu queria, mas do que queria, dou minha vida só para estar nos céus dos braços teus
 
         #-------
@@ -65,20 +66,28 @@ class App(ctk.CTk): #criando a classe App que recebe o ctk
         nome=  self.nome.get()
         senha= self.parole2.get()
         email= self.nome2.get()
+        idadee= self.idade.get()
 
-        if nome !="" and senha !="" and email !="" and senha != email and senha != nome:
+        if nome !="" and senha !="" and email !="" and idadee != "" and senha != email and senha != nome and idadee == True:
             self.destroy()
             if nome== senha or email ==senha:
                 self.labelula=ctk.CTkLabel(self,text="la password e il nome non possono essere gli stessi", fg_color="red")
                 self.labelula.place(x=10, y=10)
                 #perche non rosso?
                 self.after(3000, self.labelula.destroy)
+            
+            elif idadee=="-18":
+                self.idasas=ctk.CTkLabel(self,text="Non puoi entrare", fg_color="red")
+                self.idasas.place(x=20, y=40)
+                #perche non rosso?
+                self.after(3000, self.labelula.destroy)  
+                return False          
         else:   
-            self.labelula=ctk.CTkLabel(self.frame,text="qualcosa non va, riprova",
+            self.labelula=ctk.CTkLabel(self,text="qualcosa non va, riprova",
                                         fg_color="red")
-            self.labelula.place(x=10, y=30)  
+            self.labelula.place(x=10, y=377)  
             self.after(3000, self.labelula.destroy) 
-        
+            
 app = App() # app esta recebendo a classe App
 #geometry define o tamanho da tela
 app.geometry("400x400")#tamnho, o que esta dentro das aspas são variaveis
