@@ -1,0 +1,22 @@
+ def atualizar_imagem(self, indice):
+        self.img_tk = None
+        image_path = self.imagens[indice]
+        img = Image.open(image_path)
+        img = img.resize((300, 300))
+        self.img_tk = ImageTk.PhotoImage(img)
+        self.label_imagem.config(image=self.img_tk)
+        self.label_imagem.image = self.img_tk
+        self.entry_text.delete(0, tk.END)
+        self.titulo_imagem.config(text=self.titulos[indice])
+ 
+    def prox(self):
+        self.x += 1
+        if self.x >= len(self.imagens):
+            self.x = 0
+        self.atualizar_imagem(self.x)
+ 
+    def ant(self):
+        self.x -= 1
+        if self.x < 0:
+            self.x = len(self.imagens) - 1
+        self.atualizar_imagem(self.x)
