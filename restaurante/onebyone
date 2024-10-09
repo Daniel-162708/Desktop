@@ -1,0 +1,46 @@
+        # elif parole == "" and nome =="" and parole2 =="":
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif nome=="":
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif parole =="":
+
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif parole2=="":
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif nome == parole:
+
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif nome ==parole2:
+
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+        # elif parole!=parole2:
+
+        #     self.ti=tk.CTkLabel(self, text="Algo esta errado, tente novamente", font=("", 20),text_color="white")
+        #     self.ti.place(x=100, y=100, anchor=tk.CENTER)
+        #     self.after(5000, self.ti.destroy)
+
+
+            print("nome está vazio")
+            self.ti= ctk.CTkFrame(self, width=50, height=50, fg_color="blue")
+            self.ti.place(x=100, y=100)
+            self.ti=ctk.CTkLabel(self.ti, text="Algo esta errado, tente novamente", font=("", 10),text_color="white")
+            self.ti.place(x=100, y=100)
+            self.after(100, self.ti.destroy)
